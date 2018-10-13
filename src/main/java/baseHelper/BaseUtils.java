@@ -13,7 +13,7 @@ public class BaseUtils extends PageObject {
      * This Method enters data into Text field
      */
     public void enterTextInto(WebElement webElement, String text){
-        webElement.click();
+        webElement.clear();
         webElement.sendKeys(text);
     }
 

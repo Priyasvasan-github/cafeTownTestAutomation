@@ -11,11 +11,21 @@ public class EmployeeDetailsPage extends BaseUtils {
     @FindBy(id="greetings")
     public WebElement welcomeMessage;
 
+    @FindBy(className = "main-button")
+    public WebElement logoutButton;
+
     /**
      * This Method returns welcome Message After Login
      * @return Welcome message as String
      */
     public String getWelcomeMessage(){
         return welcomeMessage.getText();
+    }
+
+    /**
+     * This method is to click on logout button
+     */
+    public void clickLogoutButton(){
+        logoutButton.click();
     }
 }

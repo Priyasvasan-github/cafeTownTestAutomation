@@ -19,4 +19,12 @@ public class EmployeeDetailsMethods {
         return employeeDetailsPage.getWelcomeMessage();
     }
 
+    /**
+     * This method log out user from application
+     */
+    @Step
+    public void logoutOfApplication(){
+        employeeDetailsPage.clickLogoutButton();
+    }
+
 }

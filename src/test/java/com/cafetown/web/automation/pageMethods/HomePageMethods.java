@@ -35,4 +35,20 @@ public class HomePageMethods {
         return homePage.getErrorMessage();
     }
 
+    /**
+     * This method is to login with valid Login credentials
+     */
+    @Step
+    public void loginUsingValidCredentials(){
+        login("Luke","Skywalker");
+    }
+
+    /**
+     * This method returns if login page is loaded properly
+     * @return
+     */
+    @Step
+    public boolean isHomePageLoaded(){
+        return homePage.isLoginButtonDisplayed();
+    }
 }
