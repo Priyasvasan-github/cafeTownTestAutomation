@@ -21,7 +21,7 @@ public class HomePage extends BaseUtils{
     @FindBy(css = ".error-message.ng-binding")
     public WebElement errorMessage;
 
-    /***
+    /**
      * This method enters text into userName Field
      * @param userName -> user name for login
      */
@@ -29,7 +29,7 @@ public class HomePage extends BaseUtils{
         enterTextInto(userIdText,userName);
     }
 
-    /***
+    /**
      * This method enters text into userName Field
      * @param passWord -> password for login
      */
@@ -37,19 +37,26 @@ public class HomePage extends BaseUtils{
         enterTextInto(passwordText,passWord);
     }
 
-    /***
+    /**
      * This method clicks on submit button
      */
     public void clickLoginButton(){
         submitButton.click();
     }
 
-    /***
+    /**
      * This method enters text into userName Field
-     * @return String --> retuns a error message if Displayed
+     * @return String --> returns a error message if Displayed
      */
     public String getErrorMessage(){
         return errorMessage.getText();
     }
 
+    /**
+     * This method returns if submit button is displayed or not
+     * @return
+     */
+    public boolean isLoginButtonDisplayed(){
+        return submitButton.isDisplayed();
+    }
 }
