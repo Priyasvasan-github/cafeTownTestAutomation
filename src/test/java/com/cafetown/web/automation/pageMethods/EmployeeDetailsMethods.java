@@ -27,4 +27,12 @@ public class EmployeeDetailsMethods {
         employeeDetailsPage.clickLogoutButton();
     }
 
+    /**
+     * This method opens a Create employee form
+     */
+    @Step
+    public void viewCreateEmployeeForm(){
+        employeeDetailsPage.clickAddButton();
+    }
+
 }

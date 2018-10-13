@@ -40,6 +40,7 @@ public class HomePageMethods {
      */
     @Step
     public void loginUsingValidCredentials(){
+        homePage.open();
         login("Luke","Skywalker");
     }
 
