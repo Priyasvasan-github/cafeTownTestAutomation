@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
  */
 public class HomePage extends BaseUtils{
 
-    @FindBy(css="button[class=main-button]")
+    @FindBy(xpath = "//button[contains(text(),'Login')]")
     public WebElement submitButton;
 
     @FindBy(css="input[ng-model='user.name']")

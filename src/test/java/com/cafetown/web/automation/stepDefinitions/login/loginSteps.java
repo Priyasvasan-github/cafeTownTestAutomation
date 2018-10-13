@@ -22,7 +22,6 @@ public class loginSteps {
     @Given("^Luke is user accesing the portal$")
     public void accessThePortal() {
         homePageSteps.launchApplication();
-
     }
 
     @When("^Luke attempts login using (.*) credentials (.*), (.*)$")

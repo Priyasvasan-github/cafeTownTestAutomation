@@ -1,7 +1,8 @@
 package baseHelper;
 
 import net.serenitybdd.core.pages.PageObject;
-import org.openqa.selenium.Keys;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebElement;
 
 /**
@@ -21,7 +22,7 @@ public class BaseUtils extends PageObject {
      * This Method makes element to wait till element is Displayed
      * Helps avoiding Stale Element exception
      */
-    public void waitForElementToBeDisplayed(WebElement webElement){
+    public void waitForElementToBeStable(WebElement webElement){
         for(int waitCount=1;waitCount<6;waitCount++){
             try{
                 waitFor(webElement);
@@ -29,6 +30,19 @@ public class BaseUtils extends PageObject {
                 //just created a wait loop where an element will be searched for 30 seconds after page is renderred
             }
 
+        }
+    }
+
+    /**
+     * This method verifies if any alert is displayed
+     * @return
+     */
+    public boolean isAlertPresent(){
+        try{
+            Alert alert = this.getAlert();
+            return true;
+        } catch(NoAlertPresentException ex){
+            return false;
         }
     }
 }
