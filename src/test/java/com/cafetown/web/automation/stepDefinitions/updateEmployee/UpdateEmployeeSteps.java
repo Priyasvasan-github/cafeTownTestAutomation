@@ -51,4 +51,14 @@ public class UpdateEmployeeSteps {
         assertThat(employeeFormSteps.verifyRecordTypeIsUpdated("email")).isEqualToIgnoringCase(email);
    }
 
+    @When("^He want to view the details of the (.*)$")
+    public void viewEmployeeDetailsDoesNotexist(String firstName) {
+        assertThat(employeeListSteps.verifyIfEmployeeExist(firstName)).isFalse();
+
+    }
+
+    @Then("^User details of (.*) are not found$")
+    public void userRecordsNotFound(String firstName) {
+        assertThat(employeeListSteps.verifyIfEmployeeExist(firstName)).isFalse();
+    }
 }
