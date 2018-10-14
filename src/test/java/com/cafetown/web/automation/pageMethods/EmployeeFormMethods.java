@@ -21,11 +21,12 @@ public class EmployeeFormMethods {
      */
     public void createAUser(String firstName,String lastName,String startDate,String email){
         addEmployeeData(firstName, lastName, startDate, email);
-        employeeForm.clickAddButton();
+        employeeDetailsPage.clickAddButton();
+
     }
 
     private void addEmployeeData(String firstName, String lastName, String startDate, String email) {
-        employeeDetailsPage.clickAddButton();
+        employeeDetailsPage.clickCreateButton();
         employeeForm.addTextToFirstNameField(firstName);
         employeeForm.addTextToLastNameField(lastName);
         employeeForm.addTextToDateField(startDate);
@@ -39,5 +40,53 @@ public class EmployeeFormMethods {
     @Step
     public boolean isEmployeeFormVisible(){
         return employeeForm.isFirstNameFieldDisplayed();
+    }
+
+    /**
+     * This method updates a specific recordType to a newValue
+     * @param recordType
+     * @param newValue
+     */
+    @Step
+    public void updateEmployeeDetails(String recordType, String newValue){
+        viewEmployeeInformation();
+        switch (recordType){
+            case "firstName":
+                employeeForm.addTextToFirstNameField(newValue);
+                break;
+            case "lastName":
+                employeeForm.addTextToLastNameField(newValue);
+                break;
+            case "startDate":
+                employeeForm.addTextToDateField(newValue);
+                break;
+            case "email":
+                employeeForm.addTextToEmailField(newValue);
+                break;
+            default:
+                throw new IllegalArgumentException("record type you are trying to edit doesn't exist");
+        }
+        employeeDetailsPage.clickUpdateButton();
+    }
+
+    @Step
+    public String verifyRecordTypeIsUpdated(String recordType){
+        switch (recordType){
+            case "firstName":
+                return employeeForm.getEmployeeFirstName();
+            case "lastName":
+                return employeeForm.getEmployeeLastName();
+            case "startDate":
+                return employeeForm.getEmployeeStartDate();
+            case "email":
+                return employeeForm.getEmployeeEmail();
+            default:
+                throw new IllegalArgumentException("record type you are trying to edit doesn't exist");
+        }
+    }
+
+    @Step
+    public void viewEmployeeInformation(){
+        employeeDetailsPage.clickEditButton();
     }
 }

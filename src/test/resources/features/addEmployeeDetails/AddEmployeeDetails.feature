@@ -2,19 +2,19 @@ Feature: Add employee information
 
   As a user I should be able to add employee Information
 
-  @VerifyAddingUserSuccessfully
+  @VerifyAddingUserSuccessfully @Smoke @Regression
   Scenario Outline: Add valid employee details
     Given Luke is logged into the application
     When He attempts to add user with details <FirstName>, <LastName>, <DOB>, <EmailId>
     Then User details of <FirstName> are added successfully
     Examples:
-      |FirstName       |  LastName  | DOB         |     EmailId     |
-      | first          | Test User  | 1977-12-09  | user1@test.com  |
-      | secondUser     | LastName   | 1978-01-21  | user2@test.in   |
-      | THIRD user     | R          | 1979-11-30  | user3@test.com  |
-      | s              | Shortname  | 1976-02-28  | user4@test.com  |
+      |FirstName          |  LastName  | DOB         |     EmailId     |
+      | firstViewEmployee | Test User  | 1977-12-09  | user1@test.com  |
+      | nameToEdit        | lastUser   | 1989-06-09  | edit@test.cz    |
+      |FinaldelRecord!;   | R          | 1979-11-30  | user3@test.com  |
+      | s                 | Shortname  | 1976-02-28  | user4@test.com  |
 
-  @VerifyAddingUserIsNotSuccessfulAndAlertMessagesAreDisplayed
+  @VerifyAddingUserIsNotSuccessfulAndAlertMessagesAreDisplayed @Regression
   Scenario Outline: Add invalid employee details
     Given Luke is logged into the application
     When He attempts to add user with details <FirstName>, <LastName>, <DOB>, <EmailId>

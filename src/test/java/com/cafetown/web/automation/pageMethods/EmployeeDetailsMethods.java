@@ -32,7 +32,24 @@ public class EmployeeDetailsMethods {
      */
     @Step
     public void viewCreateEmployeeForm(){
-        employeeDetailsPage.clickAddButton();
+        employeeDetailsPage.clickCreateButton();
+    }
+
+    /**
+     * This method opens a Create employee form
+     */
+    @Step
+    public void updateEmployeeDetails(){
+        employeeDetailsPage.clickCreateButton();
+    }
+
+    /**
+     * This method opens a Create employee form
+     */
+    @Step
+    public void deleteEmployeeInformation(){
+        employeeDetailsPage.clickEditButton();
+        employeeDetailsPage.clickDeleteButton();
     }
 
 }
