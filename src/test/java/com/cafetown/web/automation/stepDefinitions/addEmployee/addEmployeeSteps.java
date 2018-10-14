@@ -1,6 +1,5 @@
 package com.cafetown.web.automation.stepDefinitions.addEmployee;
 
-import com.cafetown.web.automation.pageMethods.EmployeeDetailsMethods;
 import com.cafetown.web.automation.pageMethods.EmployeeFormMethods;
 import com.cafetown.web.automation.pageMethods.EmployeeListMethods;
 import cucumber.api.java.en.Then;

@@ -1,10 +1,8 @@
 package com.cafetown.web.automation.pageObjects;
 
 import baseHelper.BaseUtils;
-import net.serenitybdd.core.annotations.findby.By;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
 /**
  * Created by Sripriya Srinivasan  on 10/13/2018.
@@ -22,12 +20,6 @@ public class EmployeeForm extends BaseUtils{
 
     @FindBy(css="input[ng-model='selectedEmployee.email']")
     public WebElement emailInputText;
-
-    @FindBy(xpath="//button[contains(text(),'Add')]")
-    public WebElement addButton;
-
-    @FindBy(xpath="//button[contains(text(),'Update')]")
-    public WebElement updateButton;
 
     /**
      * This method adds text into first name field
@@ -62,28 +54,6 @@ public class EmployeeForm extends BaseUtils{
     }
 
     /**
-     * This method clicks on Add Button and wait for alerts to accept
-     */
-    public void clickAddButton(){
-        addButton.click();
-        //Serenity BDD doesn't support handling alerts at step level so handling it in page objects
-        try{
-            this.waitFor(ExpectedConditions.presenceOfElementLocated(By.id("bAdd")));
-        }catch (Exception e){
-            if(isAlertPresent()){
-                this.getAlert().accept();
-            }
-        }
-    }
-
-    /**
-     * This method clicks on Update Button
-     */
-    public void clickUpdateButton(){
-        updateButton.click();
-    }
-
-    /**
      * This method return employee form visibility
      * @return status of employee form visibility
      */
@@ -94,5 +64,24 @@ public class EmployeeForm extends BaseUtils{
         }else{
             return firstNameInputText.isDisplayed();
         }
+    }
+
+    /**
+     * Below get methods returns employee details field wise
+     */
+    public String getEmployeeFirstName(){
+        return firstNameInputText.getAttribute("value");
+    }
+
+    public String getEmployeeLastName(){
+        return lastNameInputText.getAttribute("value");
+    }
+
+    public String getEmployeeEmail(){
+        return emailInputText.getAttribute("value");
+    }
+
+    public String getEmployeeStartDate(){
+        return startDateInputText.getAttribute("value");
     }
 }

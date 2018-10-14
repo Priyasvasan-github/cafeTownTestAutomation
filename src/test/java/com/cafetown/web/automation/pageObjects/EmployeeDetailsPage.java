@@ -4,6 +4,8 @@ import baseHelper.BaseUtils;
 import net.serenitybdd.core.annotations.findby.By;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import java.util.List;
 
 /**
@@ -22,15 +24,21 @@ public class EmployeeDetailsPage extends BaseUtils {
     @FindBy(id="bEdit")
     public WebElement editButton;
 
-    @FindBy(id="bDelete")
-    public WebElement deleteButton;
-
     @FindBy(id="employee-list")
     public WebElement employeeListTable;
 
+    @FindBy(xpath="//button[contains(text(),'Add')]")
+    public WebElement addButton;
+
+    @FindBy(xpath="//button[contains(text(),'Update')]")
+    public WebElement updateButton;
+
+    @FindBy(xpath="//p[contains(text(),'Delete')]")
+    public WebElement deleteCurrentRecordButton;
+
     /**
      * This method fetches all the list of employees
-     * @return
+     * @return list of employees as WebElement List
      */
     public List<WebElement> getEmployeeList(){
         List<WebElement> employeeList = employeeListTable.findElements(By.cssSelector(".ng-scope.ng-binding"));
@@ -46,30 +54,50 @@ public class EmployeeDetailsPage extends BaseUtils {
     }
 
     /**
-     * This method is to click on logout button
+     * Below click methods click on Various buttons on Employee Details view
      */
     public void clickLogoutButton(){
         logoutButton.click();
     }
 
-    /**
-     * This method is to click on Add button
-     */
-    public void clickAddButton(){
+    public void clickCreateButton(){
         createButton.click();
     }
 
-    /**
-     * This method is to Click on Edit button
-     */
     public void clickEditButton(){
-        editButton.click();
+            editButton.click();
+    }
+
+    public void clickUpdateButton(){
+        updateButton.click();
     }
 
     /**
      * This method is to click on delete button
      */
     public void clickDeleteButton(){
-        deleteButton.click();
+        deleteCurrentRecordButton.click();
+        handleAlertOnBrowser(ExpectedConditions.presenceOfElementLocated(By.id("bDelete")));
+    }
+
+    /**
+     * This method handles the alerts if any on Browser
+     */
+    private void handleAlertOnBrowser(ExpectedCondition<WebElement> element) {
+        try {
+            this.waitFor(element);
+        } catch (Exception e) {
+            if (isAlertPresent()) {
+                this.getAlert().accept();
+            }
+        }
+    }
+
+    /**
+     * This method clicks on Add Button and wait for alerts to accept
+     */
+    public void clickAddButton(){
+        addButton.click();
+        handleAlertOnBrowser(ExpectedConditions.presenceOfElementLocated(By.id("bAdd")));
     }
 }
