@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="View employee Information" skipped="0" tests="2" time="18.88" timestamp="2018-10-15 01:45:40"><testcase name="View Existing employee details"/><testcase name="View Existing employee are not possible When record doesn't exist"/></testsuite>

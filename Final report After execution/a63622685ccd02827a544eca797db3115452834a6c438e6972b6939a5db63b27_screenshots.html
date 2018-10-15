@@ -1,0 +1,367 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Gurukula Application Automation</span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="32a65bb3375f1ea4d005af653a3cc97a2dde6a8fff812b3eb539acc4dd29ed0e.html">Add Employee Information</a></span>
+                > <span class="truncate-60"><a
+                    href="a63622685ccd02827a544eca797db3115452834a6c438e6972b6939a5db63b27.html">Add invalid employee details </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="fa fa-comments-o"></i> Capabilities</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 15-10-2018 01:43</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Add Employee Information </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As a user I should be able to add employee Information
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="85da891132b12b31ffbe30916a886f16460a51a1786d1c10d70f4e9e83a06069.html">Emptylastnametest
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="1d0c02fb9cb969bbd9e2f900ec6333e01b070c6fb5e26345e9374169cfab9e68.html">Regression
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="ee66209216faed36b1a5e02651e84669b0c5598ea0c36edfcc3ea6b7c7266ef8.html">Emptyfirstnametest
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="1ed3a21735cc6f1ac76b71b8263650d9cddf9b5d7f02f1f6c6ae28a23845ec37.html">Add Employee Details
+                                    (capability)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="f5afb6de1b132f347c3f0618fe0bd067a2711a7271bdd27fdee0b0060751384c.html">Specialcharactersasinputtest
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="b08605ee6915d84695194aaf1daca787e09741f8fd0637798692f30579da3821.html">Invalidemailtest
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="4600b58af1c4f31a2d69aca5ff6a1ce89a2a9b138de17e54465414cdbe8acebd.html">Invaliddateformattest
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="ac089bbd17d93689358b10725e6ebc291401b814f30e391cbae941398bbfd887.html">Wrongdatetest
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="bac1be8bcf00c0d5ee6c7ac52b682ff3eb55148ce1fb05298ed0e89cc8d32a09.html">Verifyaddinguserisnotsuccessfulandalertmessagesaredisplayed
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="fb806ddb5031211f0019826fcc789485d11583f793a6f5ada2351b5b33add3a9.html">Injectjavascriptasinputtest
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="8053208d42f5d4fb1c10bcf520da148e8896bd57ed70f844138d6df7aa84476a.html">Verylongfirstname
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="389ce7cfd7eaa071942201e1781d9c183b5eb335bace7ab9eb9aa72e818c5fc6.html">Wrongdateformatextradatatest
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span>
+                            <span class="test-case-title">
+                                <span class="error-color">Add invalid employee details
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given Luke is logged into the application<br>When He attempts to add user with details &lt;FirstName&gt;, &lt;LastName&gt;, &lt;DOB&gt;, &lt;EmailId&gt;<br>Then Employee is not created</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+                        <div class="panel-heading title="No such element exception: Timed out after 3 seconds. Element not found">
+                            No such element exception: Timed out after 3 seconds. Element not found
+                        </div>
+                <div><!-- Stack trace -->
+                    <button type="button" class="btn btn-danger" data-toggle="modal"
+                            data-target="#stacktraceModal-overall">
+                        View details
+                    </button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="stacktraceModal-overall" tabindex="-1" role="dialog"
+                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"
+                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="stacktraceModalLabel">
+                                    org.openqa.selenium.NoSuchElementException
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                    <h5>
+                                        <pre>Timed out after 3 seconds. Element not found<br>For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br>Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'<br>System info: host: 'KLM133721', ip: '192.168.1.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_111'<br>Driver info: driver.version: unknown<br>For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html<br>Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'<br>System info: host: 'KLM133721', ip: '192.168.1.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_111'<br>Driver info: driver.version: unknown</pre>
+                                    </h5>
+                                    com.cafetown.web.automation.pageObjects.EmployeeForm.isFirstNameFieldDisplayed(EmployeeForm.java
+                                    :65) <br>
+                                    com.cafetown.web.automation.pageMethods.EmployeeFormMethods.isEmployeeFormVisible(EmployeeFormMethods.java
+                                    :42) <br>
+                                    com.cafetown.web.automation.stepDefinitions.addEmployee.addEmployeeSteps.assertEmployeeCreationFailure(addEmployeeSteps.java
+                                    :33) <br>
+                                    ✽.Employee is not created(src/test/resources/features/addEmployeeDetails/AddEmployeeDetails.feature
+                                    :21) <br>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource6746114737681440366.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="f0efbaf3d1ec902ce25a28d96a384f6fbb783b804ed61a7cb5848b54bd995835.png" title="Add invalid employee details #1: {FirstName=emptyLastName, LastName=, DOB=1977-12-09, EmailId=user1@test.com}" width="1301"/>
+                <img src="ac5942e65a11ffee08890ec05e9f44130e993223150697cf646cb4a57e1c9c43.png" title="Given Luke is logged into the application" width="1301"/>
+                <img src="619202fe39b7f83f97eabe3ad009ce48a9522d4c376cc40ab1dd307a4d24712e.png" title="Login using valid credentials" width="1301"/>
+                <img src="10de6574b3c7d25c1ceb376860501e9b6342627ce83034bfb6b61456688630aa.png" title="Login: Luke, Skywalker" width="1301"/>
+                <img src="f0efbaf3d1ec902ce25a28d96a384f6fbb783b804ed61a7cb5848b54bd995835.png" title="When He attempts to add user with details emptyLastName, , 1977-12-09, user1@test.com" width="1301"/>
+                <img src="f0efbaf3d1ec902ce25a28d96a384f6fbb783b804ed61a7cb5848b54bd995835.png" title="Then Employee is not created" width="1301"/>
+                <img src="f0efbaf3d1ec902ce25a28d96a384f6fbb783b804ed61a7cb5848b54bd995835.png" title="Is employee form visible" width="1301"/>
+                <img src="de5c77f6c3f9232799cb8f7479bbe8c4c6ee9912fb37fbf6cae0691af48af553.png" title="Add invalid employee details #2: {FirstName=, LastName=emptyFirstName, DOB=1977-12-09, EmailId=user1@test.com}" width="1301"/>
+                <img src="77364c6c1c74150656bd03ce6a86bf8d5e59ccd74eedb0ca14adad652720c51b.png" title="Given Luke is logged into the application" width="1301"/>
+                <img src="922a4a4e665638d077530deb91d4463356efa7c94d9117d9961be4bb21d10611.png" title="Login using valid credentials" width="1301"/>
+                <img src="10de6574b3c7d25c1ceb376860501e9b6342627ce83034bfb6b61456688630aa.png" title="Login: Luke, Skywalker" width="1301"/>
+                <img src="de5c77f6c3f9232799cb8f7479bbe8c4c6ee9912fb37fbf6cae0691af48af553.png" title="When He attempts to add user with details , emptyFirstName, 1977-12-09, user1@test.com" width="1301"/>
+                <img src="3b2a2daebd3a548144cb143de4ef00bb56fa36d411dd6f7de9e5fdf4eb4d834c.png" title="Then Employee is not created" width="1301"/>
+                <img src="de5c77f6c3f9232799cb8f7479bbe8c4c6ee9912fb37fbf6cae0691af48af553.png" title="Is employee form visible" width="1301"/>
+                <img src="8e2ba94e630fcb1f00db34a4f75b2d851f69b105405325ff37367fe88a7039a3.png" title="Add invalid employee details #3: {FirstName=InvalidEmail, LastName=R, DOB=1979-11-30, EmailId=user3test.com}" width="1301"/>
+                <img src="3c77bd2c12b5b8dfd70d9682e26cd66ecc51a9ca316c64c8dde5104aac6d4846.png" title="Given Luke is logged into the application" width="1301"/>
+                <img src="922a4a4e665638d077530deb91d4463356efa7c94d9117d9961be4bb21d10611.png" title="Login using valid credentials" width="1301"/>
+                <img src="3b2f7c74146732aed317b75747af371e4e0b3b60b8aa585153d3b53d6d10a875.png" title="Login: Luke, Skywalker" width="1301"/>
+                <img src="8e2ba94e630fcb1f00db34a4f75b2d851f69b105405325ff37367fe88a7039a3.png" title="When He attempts to add user with details InvalidEmail, R, 1979-11-30, user3test.com" width="1301"/>
+                <img src="d516f6694f82b20125b793cf30fbbc0e7bd7299ffb60c8ece58ec170deb59454.png" title="Then Employee is not created" width="1301"/>
+                <img src="8e2ba94e630fcb1f00db34a4f75b2d851f69b105405325ff37367fe88a7039a3.png" title="Is employee form visible" width="1301"/>
+                <img src="87e6cb7600598153433086f3345fef4db95b6130939b08faf5a0dd688650b6e4.png" title="Add invalid employee details #4: {FirstName=InvalidDate Feb29in2017, LastName=test, DOB=2017-02-29, EmailId=user1@test.com}" width="1301"/>
+                <img src="77364c6c1c74150656bd03ce6a86bf8d5e59ccd74eedb0ca14adad652720c51b.png" title="Given Luke is logged into the application" width="1301"/>
+                <img src="47c44eeef7b2ceb4693ec9153c791cb7879932ac3dd38f0015ee85083d4db1c4.png" title="Login using valid credentials" width="1301"/>
+                <img src="bcb91d55b85b3df16b0493da1c43809d982257aca6aab11610c4b5153825843f.png" title="Login: Luke, Skywalker" width="1301"/>
+                <img src="87e6cb7600598153433086f3345fef4db95b6130939b08faf5a0dd688650b6e4.png" title="When He attempts to add user with details InvalidDate Feb29in2017, test, 2017-02-29, user1@test.com" width="1301"/>
+                <img src="87e6cb7600598153433086f3345fef4db95b6130939b08faf5a0dd688650b6e4.png" title="Then Employee is not created" width="1301"/>
+                <img src="87e6cb7600598153433086f3345fef4db95b6130939b08faf5a0dd688650b6e4.png" title="Is employee form visible" width="1301"/>
+                <img src="3c77bd2c12b5b8dfd70d9682e26cd66ecc51a9ca316c64c8dde5104aac6d4846.png" title="Given Luke is logged into the application" width="1301"/>
+                <img src="47c44eeef7b2ceb4693ec9153c791cb7879932ac3dd38f0015ee85083d4db1c4.png" title="Login using valid credentials" width="1301"/>
+                <img src="bcb91d55b85b3df16b0493da1c43809d982257aca6aab11610c4b5153825843f.png" title="Login: Luke, Skywalker" width="1301"/>
+                <img src="42ad65fec4a384f159aa0335eb52a52db491bae8b09605f3c88a60b6cf29bc08.png" title="When He attempts to add user with details s@123@#4, SpecialCharacters, 1976-02-28, user4@test.com" width="1301"/>
+                <img src="29705afaa74ea7bad45338525dedd36e6675dc9b3dd7ba22fd6e79524b634fb8.png" title="Is employee form visible" width="1301"/>
+                <img src="1c61ecac68368a22981a060d0976ced5036e79ff6cabb963f483551e426d4510.png" title="Given Luke is logged into the application" width="1301"/>
+                <img src="1264e44e5fc66607ad53c3d8aa9abbeb2e4b3edc3639195834eb469f6dd3a7e1.png" title="Login using valid credentials" width="1301"/>
+                <img src="3b2f7c74146732aed317b75747af371e4e0b3b60b8aa585153d3b53d6d10a875.png" title="Login: Luke, Skywalker" width="1301"/>
+                <img src="2d9ea72dee6f0980401081e793ceef21020730b4bf876d768da07b2baf1dbb68.png" title="When He attempts to add user with details &lt;button onclick=alert('Test')&gt;Click Here&lt;/button&gt;, sc, 1976-02-28, user4@test.com" width="1301"/>
+                <img src="29705afaa74ea7bad45338525dedd36e6675dc9b3dd7ba22fd6e79524b634fb8.png" title="Is employee form visible" width="1301"/>
+                <img src="f0b8b72043bdfe80f97fc8d50448163ab53c6519651e423bb60c491c88970abe.png" title="Add invalid employee details #7: {FirstName=ChangedDateFormat, LastName=test, DOB=17-Mar-2018, EmailId=user1@test.com}" width="1301"/>
+                <img src="3c77bd2c12b5b8dfd70d9682e26cd66ecc51a9ca316c64c8dde5104aac6d4846.png" title="Given Luke is logged into the application" width="1301"/>
+                <img src="922a4a4e665638d077530deb91d4463356efa7c94d9117d9961be4bb21d10611.png" title="Login using valid credentials" width="1301"/>
+                <img src="10de6574b3c7d25c1ceb376860501e9b6342627ce83034bfb6b61456688630aa.png" title="Login: Luke, Skywalker" width="1301"/>
+                <img src="f0b8b72043bdfe80f97fc8d50448163ab53c6519651e423bb60c491c88970abe.png" title="When He attempts to add user with details ChangedDateFormat, test, 17-Mar-2018, user1@test.com" width="1301"/>
+                <img src="f0b8b72043bdfe80f97fc8d50448163ab53c6519651e423bb60c491c88970abe.png" title="Then Employee is not created" width="1301"/>
+                <img src="f0b8b72043bdfe80f97fc8d50448163ab53c6519651e423bb60c491c88970abe.png" title="Is employee form visible" width="1301"/>
+                <img src="77364c6c1c74150656bd03ce6a86bf8d5e59ccd74eedb0ca14adad652720c51b.png" title="Given Luke is logged into the application" width="1301"/>
+                <img src="922a4a4e665638d077530deb91d4463356efa7c94d9117d9961be4bb21d10611.png" title="Login using valid credentials" width="1301"/>
+                <img src="10de6574b3c7d25c1ceb376860501e9b6342627ce83034bfb6b61456688630aa.png" title="Login: Luke, Skywalker" width="1301"/>
+                <img src="509584e9cdc588021a60cb31d0841ffaaa41347d7dd34126fbea6f6976f9ddac.png" title="When He attempts to add user with details ExtraValuesAfterDateFormat, test, 1976-02-28et, user1@test.com" width="1301"/>
+                <img src="29705afaa74ea7bad45338525dedd36e6675dc9b3dd7ba22fd6e79524b634fb8.png" title="Is employee form visible" width="1301"/>
+                <img src="984922892bf3fe06b2330c0f72be01093152fa40dc7786256032fef24af2ab60.png" title="Given Luke is logged into the application" width="1301"/>
+                <img src="bbdf274d2588f64cb94da9c8b016708db6734b4f8b031509d4f7c3d6ed3e41cb.png" title="Login using valid credentials" width="1301"/>
+                <img src="10de6574b3c7d25c1ceb376860501e9b6342627ce83034bfb6b61456688630aa.png" title="Login: Luke, Skywalker" width="1301"/>
+                <img src="8df875996063243e6ff67618c166fd0a05e8edc020dd633f692636569d49f6c8.png" title="When He attempts to add user with details ExtraLongStringAsInputExtraLongStringAsInputExtraLongStringAsInputExtraLongStringAsInputExtraLongStringAsInputExtraLongStringAsInputExtraLongStringAsInputExtraLongStringAsInputExtraLongStringAsInputExtraLongStringAsInput, test, 1976-02-28et, user1@test.com" width="1301"/>
+                <img src="29705afaa74ea7bad45338525dedd36e6675dc9b3dd7ba22fd6e79524b634fb8.png" title="Is employee form visible: <span class='error-color'>ERROR</span>" width="1301"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.9.9</span>
+</div>
+</body>
+</html>
