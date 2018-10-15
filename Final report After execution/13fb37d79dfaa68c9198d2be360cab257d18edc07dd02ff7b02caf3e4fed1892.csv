@@ -1,5 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Update employee Information","update first name details","SUCCESS","2018-10-15T01:45:13.259+02:00[Europe/Paris]","0.0","9.15"
-"Update employee Information","update Last name details","SUCCESS","2018-10-15T01:45:22.41+02:00[Europe/Paris]","0.0","5.85"
-"Update employee Information","update Start date details","SUCCESS","2018-10-15T01:45:28.26+02:00[Europe/Paris]","0.0","5.93"
-"Update employee Information","update email details","SUCCESS","2018-10-15T01:45:34.191+02:00[Europe/Paris]","0.0","5.76"

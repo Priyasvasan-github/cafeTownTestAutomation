@@ -1,10 +1,12 @@
+@Regression
 Feature: Add employee information
-
   As a user I should be able to add employee Information
 
-  @VerifyAddingUserSuccessfully @Smoke @Regression
-  Scenario Outline: Add valid employee details
+  Background:
     Given Luke is logged into the application
+
+  @VerifyAddingUserSuccessfully @Smoke
+  Scenario Outline: Add valid employee details
     When He attempts to add user with details <FirstName>, <LastName>, <DOB>, <EmailId>
     Then User details of <FirstName> are added successfully
     Examples:
@@ -14,9 +16,8 @@ Feature: Add employee information
       |FinaldelRecord!;   | R          | 1979-11-30  | user3@test.com  |
       | s                 | Shortname  | 1976-02-28  | user4@test.com  |
 
-  @VerifyAddingUserIsNotSuccessfulAndAlertMessagesAreDisplayed @Regression
+  @VerifyAddingUserIsNotSuccessfulAndAlertMessagesAreDisplayed
   Scenario Outline: Add invalid employee details
-    Given Luke is logged into the application
     When He attempts to add user with details <FirstName>, <LastName>, <DOB>, <EmailId>
     Then Employee is not created
   @EmptyLastNameTest
@@ -55,4 +56,3 @@ Feature: Add employee information
     Examples:
       |FirstName                                        |  LastName        | DOB         |     EmailId     |
       | ExtraLongStringAsInputExtraLongStringAsInputExtraLongStringAsInputExtraLongStringAsInputExtraLongStringAsInputExtraLongStringAsInputExtraLongStringAsInputExtraLongStringAsInputExtraLongStringAsInputExtraLongStringAsInput                      | test             | 1976-02-28et| user1@test.com  |
-

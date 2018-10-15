@@ -19,7 +19,7 @@ public class loginSteps {
     @Steps
     EmployeeDetailsMethods employeeDetailsSteps;
 
-    @Given("^Luke is user accesing the portal$")
+    @Given("^Luke is user accessing the portal$")
     public void accessThePortal() {
         homePageSteps.launchApplication();
     }
