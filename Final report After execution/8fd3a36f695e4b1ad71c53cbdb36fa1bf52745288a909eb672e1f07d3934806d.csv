@@ -1,0 +1,7 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Add employee information","Add valid employee details","SUCCESS","2018-10-15T01:43:01.365+02:00[Europe/Paris]","0.0","35.05"
+"Delete employee Information","Delete user details","SUCCESS","2018-10-15T01:44:47.449+02:00[Europe/Paris]","0.0","17.34"
+"Verify Login to Application","Verify user is able to login with correct credentials","SUCCESS","2018-10-15T01:45:04.929+02:00[Europe/Paris]","0.0","2.67"
+"Logout of the Application","Verify user is able to logout when required","SUCCESS","2018-10-15T01:45:09.751+02:00[Europe/Paris]","0.0","3.41"
+"Update employee Information","update first name details","SUCCESS","2018-10-15T01:45:13.259+02:00[Europe/Paris]","0.0","9.15"
+"View employee Information","View Existing employee details","SUCCESS","2018-10-15T01:45:40.115+02:00[Europe/Paris]","0.0","2.06"
