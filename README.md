@@ -58,7 +58,7 @@ class tells JUnit to kick off Cucumber.
 
 ## 2) Using IDE
 	Open the cloned project in IDE. Enable Auto-Import for Maven-dependency
-	run Testrunner files in the path (src\test\java\testRunners)
+	run Testrunner files in the path (src\test\java\com\cafetown\web\automation\testRunners)
 
 
 ## Test Result (View the reports)
@@ -66,7 +66,7 @@ Serenity BDD has one of the best reporting and the test reports are generated ev
 
 I have added sample test results here in the repository under folder **_`Final report After execution`_**
 
-When the project is cloned into Local reporting of test results can be seen if we open **_`index.html`_** from Test Reports on Final run folder.	
+When the project is cloned into Local, test results reporting can be seen if we open **_`index.html`_** from Final report After execution folder.	
 	
 	
 Kindly let me know if you need any further Information. You can contact me on my emailID.	
