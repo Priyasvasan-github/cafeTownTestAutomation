@@ -61,7 +61,7 @@ class tells JUnit to kick off Cucumber.
 	run Testrunner files in the path (src\test\java\com\cafetown\web\automation\testRunners)
 
 
-## Test Result (View the reports)
+## 3) Test Result (View the reports)
 Serenity BDD has one of the best reporting and the test reports are generated every time we execute the tests.
 
 When the project is cloned into Local, test results reporting can be seen if we open **_`index.html`_** from `(target\site\serenity\index.html)`.
